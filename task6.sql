@@ -1,0 +1,12 @@
+SELECT * FROM (
+    SELECT 2023 AS year, 1 AS month, 120000 AS monthly_revenue, 45 AS order_volume
+    UNION ALL
+    SELECT 2023, 2, 135000, 52
+    UNION ALL
+    SELECT 2023, 3, 148000, 60
+    UNION ALL
+    SELECT 2023, 4, 162500, 68
+    UNION ALL
+    SELECT 2023, 5, 175200, 74
+)
+ORDER BY year, month;
